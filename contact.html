@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us - AHEZA Hotel</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: #ffffff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
+      margin: 0;
+      color: #333;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      background: rgba(0,0,0,0.6);
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 100;
+    }
+
+nav a {
+            color: rgb(234, 154, 5);
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 15px;
+            font-size: 22px;
+            transition: color 0.3s;
+        }
+
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-links li a {
+      color: rgb(239, 170, 43);
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 22px;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links li a:hover {
+      color: #f9b233;
+    }
+
+    /* Header */
+    header {
+      text-align: center;
+      padding: 180px 20px 30px 20px; /* bigger header spacing */
+      color: black;
+    }
+
+    header h1 {
+      font-size: 2.5rem; /* slightly bigger */
+      margin-bottom: 10px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background-color: #bfc65f;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-7px);
+      box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+    }
+
+    .card h2 {
+      margin-bottom: 20px;
+      color: #903f27;
+      font-size: 1.8rem;
+    }
+
+    .card p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      margin-bottom: 12px;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 18px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+
+    form button {
+      background-color: #903f27;
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    form button:hover {
+      background-color: #d4a017;
+    }
+
+    footer {
+      background: black;
+      color: #ccc;
+      text-align: center;
+      padding: 20px;
+      width: 100%;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">AHEZA Hotel</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About us</a></li>
+        <li><a href="explore.html">Rooms</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <h1>Contact Us</h1>
+  </header>
+
+  <div class="container">
+    <div class="card">
+      <h2>FIND US HERE</h2>
+      <p><strong>Address:</strong> AHEZA HOTEL, Kigali, Rwanda,</p>
+      <p><strong>Phone:</strong> +250 786 434 025</p>
+      <p><strong>Email:</strong> AHEZAhotel@gmail.com</p>
+      <p><strong>Hours:</strong> Open 24/7</p>
+    </div>
+
+    <div class="card">
+      <h2>REACH US HERE</h2>
+      <form action="#" method="post">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 AHEZA Hotel. All rights reserved.</p>
+
+  </footer>
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore Rooms | AHEZA Hotel</title>
+  <style>
+    body {
+      background-color: #ffe4e1;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      color: #333;
+      text-align: center;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      background: rgba(0,0,0,0.6);
+      position: fixed;
+      top: 0;
+      width: 95%;
+      z-index: 100;
+    }
+
+    nav a {
+            color: rgb(234, 154, 5);
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 15px;
+            font-size: 22px;
+            transition: color 0.3s;
+        }
+
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-links li a {
+      color: rgb(239, 170, 43);
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 22px;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links li a:hover {
+      color: #f9b233;
+    }
+
+    header {
+      text-align: center;
+      padding: 180px 20px 30px 20px; /* bigger header spacing */
+      color: black;
+    }
+
+    header h2 {
+      font-size: 2.5rem; /* slightly bigger */
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.25rem; /* slightly bigger paragraph */
+      margin-top: 0;
+    }
+
+    /* Room cards container */
+    .ROOMS {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .card {
+      background-color: #fff0f5;
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      overflow: hidden;
+      padding: 25px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: #903f27;
+      font-size: 1.5rem;
+    }
+
+    footer {
+      background-color: black;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      width: 100%;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">AHEZA Hotel</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About us</a></li>
+        <li><a href="explore.html">Rooms</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <h2>EXPLORE OUR HOTEL ROOMS</h2>
+    <p>Suites designed for comfort & elegance</p>
+  </header>
+
+  <!-- Room Cards -->
+  <section class="ROOMS">
+    <div class="card">
+      <h3>Bedroom</h3>
+      <img src="AHEZA room.avif" alt="Luxury Bedroom">
+    </div>
+
+    <div class="card">
+      <h3>Bathroom</h3>
+      <img src="AHEZA bathroom.jpg" alt="Bathroom">
+    </div>
+
+    <div class="card">
+      <h3>Living Area</h3>
+      <img src="AHEZA living area.jpg" alt="Living Area">
+    </div>
+
+    <div class="card">
+      <h3>Balcony</h3>
+      <img src="AHEZA balcony.jpg" alt="Balcony View">
+    </div>
+
+    <div class="card">
+      <h3>Twin Bed</h3>
+      <img src="AHEZA twin bed.jpg" alt="Twin Bedroom">
+    </div>
+
+    <div class="card">
+      <h3>Twin Bathroom</h3>
+      <img src="AHEZA twin bathroom.jpg" alt="Twin Bathroom">
+    </div>
+
+    <div class="card">
+      <h3>bunk beds</h3>
+      <img src="AHEZA bunk bed.avif" alt="beds">
+    </div>
+
+    <div class="card">
+      <h3>Kids bathroom</h3>
+      <img src="AHEZA twin bathroom.jpg" alt="kids bathroom">
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 AHEZA. All rights reserved.</p>
+  </footer>
+</body>
+</html>
